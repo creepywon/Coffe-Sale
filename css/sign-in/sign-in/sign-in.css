@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "B Roya";
+  src: url("/fonts/BRoya.ttf");
+}
+
+@font-face {
+  font-family: "B Yekan";
+  src: url("/fonts/BYekan.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "B Roya";
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body ul,
+body li,
+body a,
+body p,
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6,
+html ul,
+html li,
+html a,
+html p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  direction: rtl;
+  padding: 3rem;
+  color: black;
+}
+
+header .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+header .right-side .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .right-side .logo svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+header .right-side ul li a {
+  font-size: 1.3rem;
+  color: black;
+  font-weight: bold;
+}
+
+header .left-side .menu-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .left-side .menu-back svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+  position: absolute;
+  background-image: url("/images/poster/poster-6.png");
+  -webkit-filter: opacity(0.2);
+          filter: opacity(0.2);
+}
+
+.sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5vh;
+}
+
+.sign-in h1 {
+  text-align: center;
+  font-size: calc(2rem + 2vw);
+  font-weight: bold;
+}
+
+.forms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-top: 3em;
+}
+
+.forms .form-input input {
+  font-family: "B Roya";
+  padding: 1rem;
+  width: calc(20ch + 10vw);
+  font-size: 1.5rem;
+  border-radius: 20px;
+  border: 0.1rem rgba(0, 0, 0, 0.26) solid;
+  -webkit-box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.308);
+          box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.308);
+  text-align: center;
+}
+
+.forms .save-me {
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.forms .need-help p {
+  font-size: 1rem;
+  color: black;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.buttons input {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  color: white;
+  border: none;
+  -webkit-box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.561);
+          box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.561);
+  font-size: calc(1rem + 0.8vw);
+  width: 15ch;
+  border-radius: 100px;
+  padding: 0.7rem 1rem;
+}
+
+.buttons input:first-child {
+  background: #f13a3f;
+}
+
+.buttons input:last-child {
+  background: #a0d235;
+}
+
+.buttons input:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+/*# sourceMappingURL=sign-in.css.map */

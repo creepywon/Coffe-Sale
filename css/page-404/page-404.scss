@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "B Yekan";
+    src: url("/fonts/BYekan.ttf");
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #921a1c;
+    height: 100vh;
+    font-family: "B Yekan";
+    color: white;
+
+    a,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.top-text {
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    display: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+
+
+  
+
+    .hero {
+        animation: heroAnimation 3s  ease  forwards;
+        width: calc(25rem + 10vw);
+        margin-left: 7%;
+        margin-right: 7%;
+        transform-origin: top;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.335);
+        z-index: 1;
+        svg {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+
+    .info {
+        animation: infoAniamtion 3s ease-out forwards;
+        transform: translateY(-100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        margin-left: 7%;
+        margin-right: 7%;
+        z-index: 0;
+     
+
+      
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 0.2rem white solid;
+            h1 {
+                font-size: calc(3rem + 10vw);
+                text-shadow: 0rem 1rem 1rem black;
+            }
+
+            h2 {
+                font-size: calc(1rem + 1vw);
+            }
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10%;
+            width: 100%;
+            margin-bottom: 3rem;
+            a {
+                width: 10ch;
+                color: black;
+                text-decoration: none;
+                font-size: 1.4rem;
+                padding: 0.7rem 1rem;
+                background-color: white;
+                border-radius: 0.7rem;
+                font-weight: bold;
+                box-shadow: 0 0 0.5rem 0.3rem white;
+            }
+        }
+
+        
+    }
+}
+
+@keyframes heroAnimation {
+
+    from {
+        transform: translateX(150%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes infoAniamtion {
+
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+    
+}

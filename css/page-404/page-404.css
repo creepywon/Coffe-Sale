@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "B Yekan";
+  src: url("/fonts/BYekan.ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #921a1c;
+  height: 100vh;
+  font-family: "B Yekan";
+  color: white;
+}
+
+html a,
+html p,
+html h1,
+html h2,
+html h3,
+html h4,
+html h5,
+html h6,
+body a,
+body p,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.top-text {
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  display: none;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.content .hero {
+  -webkit-animation: heroAnimation 3s  ease  forwards;
+          animation: heroAnimation 3s  ease  forwards;
+  width: calc(25rem + 10vw);
+  margin-left: 7%;
+  margin-right: 7%;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  -webkit-box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.335);
+          box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, 0.335);
+  z-index: 1;
+}
+
+.content .hero svg {
+  width: 100%;
+  padding: 1rem;
+}
+
+.content .info {
+  -webkit-animation: infoAniamtion 3s ease-out forwards;
+          animation: infoAniamtion 3s ease-out forwards;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-left: 7%;
+  margin-right: 7%;
+  z-index: 0;
+}
+
+.content .info .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem white solid;
+}
+
+.content .info .text h1 {
+  font-size: calc(3rem + 10vw);
+  text-shadow: 0rem 1rem 1rem black;
+}
+
+.content .info .text h2 {
+  font-size: calc(1rem + 1vw);
+}
+
+.content .info .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10%;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.content .info .buttons a {
+  width: 10ch;
+  color: black;
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 0.7rem 1rem;
+  background-color: white;
+  border-radius: 0.7rem;
+  font-weight: bold;
+  -webkit-box-shadow: 0 0 0.5rem 0.3rem white;
+          box-shadow: 0 0 0.5rem 0.3rem white;
+}
+
+@-webkit-keyframes heroAnimation {
+  from {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes heroAnimation {
+  from {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes infoAniamtion {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes infoAniamtion {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+/*# sourceMappingURL=page-404.css.map */

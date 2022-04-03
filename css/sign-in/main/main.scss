@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "B Roya";
+    src: url("/fonts/BRoya.ttf");
+}
+
+@font-face {
+    font-family: "B Yekan";
+    src: url("/fonts/BYekan.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "B Roya";
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    ul,
+    li,
+    a,
+    p {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    direction: rtl;
+    padding: 3rem;
+    color: black;
+    .right-side {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        .logo {
+            display: flex;
+            svg {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+
+        ul {
+            li {
+                a {
+                    font-size: 1.3rem;
+                    color: black;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .left-side {
+        .menu-back {
+            display: flex;
+            svg {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    background-image: url("/images/poster/poster-6.png");
+    filter: opacity(0.2);
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    h1 {
+        text-align: center;
+        font-size: calc(2rem + 2vw);
+        font-weight: bold;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    gap: 2rem;
+    input {
+        transition-duration: 1s;
+        color: white;
+        border: none;
+        box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.561);
+        font-size: calc(1rem + 0.8vw);
+        width: 15ch;
+        border-radius: 100px;
+        padding: 0.8rem;
+        &:first-child {
+            background: rgba(241, 58, 63, 1);
+        }
+
+        &:last-child {
+            background: rgba(160, 210, 53, 1);
+        }
+
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+}
