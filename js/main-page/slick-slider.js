@@ -33,7 +33,6 @@ for (let index = 0; index < headerIcons.length; index++) {
             }
 
         )
-        console.log(test)
 
 
 
