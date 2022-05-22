@@ -36,11 +36,13 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
 </head>
 
 <body>
-
-
 
   <!-- Side Bar -->
   <section class="side-bar" id="side-bar">
@@ -73,13 +75,10 @@
     </div>
 
     <!-- Side Bar List -->
-    <ul id="side-bar-list">
+    <ul class="side-bar-list" id="side-bar-list">
 
-      <!-- Side Bar List Item -->
-      <!-- Just Change Href Of <a> Tag On Each List Item  -->
-      <!-- For example this One Is Posts -->
       <li>
-        <a href="#" id="posts-icon">
+        <a href="/html/admin-panel/posts/" id="posts-icon">
           <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M5 20C5.55228 20 6 19.5523 6 19C6 18.4477 5.55228 18 5 18C4.44772 18 4 18.4477 4 19C4 19.5523 4.44772 20 5 20Z"
@@ -106,6 +105,56 @@
 
           <p>پست ها</p>
         </a>
+      </li>
+
+      <li>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Accordion Item #1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the first item's accordion body.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Accordion Item #2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+                filled with some actual content.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Accordion Item #3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                happening here in terms of content, but just filling up the space to make it look, at least at first
+                glance, a bit more representative of how this would look in a real-world application.
+              </div>
+            </div>
+          </div>
+        </div>
       </li>
 
       <li>
@@ -140,55 +189,6 @@
         </a>
       </li>
 
-      <!-- <li>
-              <a href="#">
-                  <svg viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                          d="M665.216 768L776.064 960H702.208L591.36 768H433.024L322.176 960H248.32L359.168 768H160C151.513 768 143.374 764.629 137.373 758.627C131.371 752.626 128 744.487 128 736V192H64C55.5131 192 47.3737 188.629 41.3726 182.627C35.3714 176.626 32 168.487 32 160C32 151.513 35.3714 143.374 41.3726 137.373C47.3737 131.371 55.5131 128 64 128H960C968.487 128 976.626 131.371 982.627 137.373C988.629 143.374 992 151.513 992 160C992 168.487 988.629 176.626 982.627 182.627C976.626 188.629 968.487 192 960 192H896V736C896 744.487 892.629 752.626 886.627 758.627C880.626 764.629 872.487 768 864 768H665.216ZM832 192H192V704H832V192ZM352 448C360.487 448 368.626 451.371 374.627 457.373C380.629 463.374 384 471.513 384 480V544C384 552.487 380.629 560.626 374.627 566.627C368.626 572.629 360.487 576 352 576C343.513 576 335.374 572.629 329.373 566.627C323.371 560.626 320 552.487 320 544V480C320 471.513 323.371 463.374 329.373 457.373C335.374 451.371 343.513 448 352 448V448ZM512 384C520.487 384 528.626 387.371 534.627 393.373C540.629 399.374 544 407.513 544 416V544C544 552.487 540.629 560.626 534.627 566.627C528.626 572.629 520.487 576 512 576C503.513 576 495.374 572.629 489.373 566.627C483.371 560.626 480 552.487 480 544V416C480 407.513 483.371 399.374 489.373 393.373C495.374 387.371 503.513 384 512 384V384ZM672 320C680.487 320 688.626 323.371 694.627 329.373C700.629 335.374 704 343.513 704 352V544C704 552.487 700.629 560.626 694.627 566.627C688.626 572.629 680.487 576 672 576C663.513 576 655.374 572.629 649.373 566.627C643.371 560.626 640 552.487 640 544V352C640 343.513 643.371 335.374 649.373 329.373C655.374 323.371 663.513 320 672 320Z"
-                          fill="black" />
-                  </svg>
-
-                  <p>آنالیز ها</p>
-              </a>
-          </li> -->
-
-      <!-- <li>
-              <a href="#">
-                  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                          d="M12.79 21L3 11.21V13.21C3 13.74 3.21 14.25 3.59 14.62L11.38 22.41C12.16 23.19 13.43 23.19 14.21 22.41L20.42 16.2C21.2 15.42 21.2 14.15 20.42 13.37L12.79 21Z"
-                          fill="black" />
-                      <path
-                          d="M11.38 17.41C11.77 17.8 12.28 18 12.79 18C13.3 18 13.81 17.8 14.2 17.41L20.41 11.2C21.19 10.42 21.19 9.15 20.41 8.37L12.62 0.58C12.25 0.21 11.74 0 11.21 0H5C3.9 0 3 0.9 3 2V8.21C3 8.74 3.21 9.25 3.59 9.62L11.38 17.41V17.41ZM5 2H11.21L19 9.79L12.79 16L5 8.21V2Z"
-                          fill="black" />
-                      <path
-                          d="M7.25 5.5C7.94036 5.5 8.5 4.94036 8.5 4.25C8.5 3.55964 7.94036 3 7.25 3C6.55964 3 6 3.55964 6 4.25C6 4.94036 6.55964 5.5 7.25 5.5Z"
-                          fill="black" />
-                  </svg>
-
-                  <p>تخفیف ها</p>
-              </a>
-          </li> -->
-
-      <!-- <li>
-              <a href="#">
-                  <svg viewBox="0 0 576 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_11_35)">
-                          <path
-                              d="M532 386.2C559.5 359.1 576 325.1 576 288C576 208 499.5 141.9 399.8 130.1C368.3 72.5 294.3 32 208 32C93.1 32 -1.61072e-06 103.6 -1.61072e-06 192C-1.61072e-06 229 16.5 263 44 290.2C28.7 320.9 6.7 344.7 6.3 345.1C-1.43051e-06 351.8 -1.8 361.6 1.9 370.1C5.5 378.6 13.9 384.1 23.1 384.1C76.6 384.1 119.8 363.9 148.3 345.3C157.5 347.4 167 349 176.7 350.2C208.1 407.6 281.8 448 368 448C388.8 448 408.8 445.6 427.8 441.2C456.3 459.7 499.4 480 553 480C562.2 480 570.5 474.5 574.2 466C577.8 457.5 576.1 447.7 569.8 441C569.4 440.7 547.3 416.9 532 386.2V386.2ZM139.2 293.9L122.1 305C108 314.1 93.6 321.3 79 326.4C81.7 321.7 84.4 316.7 87 311.6L102.5 280.5L77.7 256C64.2 242.6 48 220.7 48 192C48 131.3 121.3 80 208 80C294.7 80 368 131.3 368 192C368 252.7 294.7 304 208 304C191.5 304 175 302.1 159 298.4L139.2 293.9ZM498.3 352L473.6 376.4L489.1 407.5C491.7 412.6 494.4 417.6 497.1 422.3C482.5 417.2 468.1 410 454 400.9L436.9 389.8L417 394.4C401 398.1 384.5 400 368 400C314 400 265.8 379.9 236.7 350.3C338 339.5 416 272.9 416 192C416 188.6 415.6 185.3 415.3 182C479.7 196.5 528 238.8 528 288C528 316.7 511.8 338.6 498.3 352Z"
-                              fill="black" />
-                      </g>
-                      <defs>
-                          <clipPath id="clip0_11_35">
-                              <rect width="576" height="512" fill="white" />
-                          </clipPath>
-                      </defs>
-                  </svg>
-                  <p>نظرات</p>
-                  <h1 style="background-color: red;">133</h1>
-              </a>
-          </li> -->
-
       <li>
         <a href="#">
           <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,29 +201,6 @@
           <h1 style="background-color: greenyellow ; color: black;">133</h1>
         </a>
       </li>
-
-      <!-- <li>
-              <a href="#">
-                  <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M11 15C12.0609 15 13.0783 14.5786 13.8284 13.8284C14.5786 13.0783 15 12.0609 15 11C15 9.93913 14.5786 8.92172 13.8284 8.17157C13.0783 7.42143 12.0609 7 11 7C9.93913 7 8.92172 7.42143 8.17157 8.17157C7.42143 8.92172 7 9.93913 7 11C7 12.0609 7.42143 13.0783 8.17157 13.8284C8.92172 14.5786 9.93913 15 11 15V15ZM16 11C16 12.3261 15.4732 13.5979 14.5355 14.5355C13.5979 15.4732 12.3261 16 11 16C9.67392 16 8.40215 15.4732 7.46447 14.5355C6.52678 13.5979 6 12.3261 6 11C6 9.67392 6.52678 8.40215 7.46447 7.46447C8.40215 6.52678 9.67392 6 11 6C12.3261 6 13.5979 6.52678 14.5355 7.46447C15.4732 8.40215 16 9.67392 16 11V11Z"
-                          fill="black" />
-                      <path
-                          d="M9.43801 11.944C9.48501 12.54 9.95601 13.004 10.801 13.06V13.5H11.176V13.057C12.051 12.996 12.562 12.528 12.562 11.85C12.562 11.232 12.172 10.914 11.472 10.75L11.176 10.68V9.48C11.552 9.523 11.79 9.728 11.847 10.012H12.505C12.458 9.437 11.965 8.988 11.176 8.939V8.5H10.801V8.95C10.054 9.023 9.54601 9.472 9.54601 10.108C9.54601 10.67 9.92401 11.028 10.553 11.174L10.801 11.235V12.507C10.417 12.449 10.162 12.237 10.105 11.944H9.43701H9.43801ZM10.798 10.59C10.429 10.505 10.229 10.33 10.229 10.068C10.229 9.774 10.445 9.554 10.801 9.49V10.59H10.798V10.59ZM11.23 11.336C11.679 11.44 11.885 11.608 11.885 11.905C11.885 12.244 11.628 12.476 11.176 12.519V11.324L11.23 11.336V11.336Z"
-                          fill="black" />
-                      <path
-                          d="M1 0C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1L0 9C0 9.26522 0.105357 9.51957 0.292893 9.70711C0.48043 9.89464 0.734784 10 1 10H5.083C5.141 9.656 5.228 9.322 5.341 9H3C3 8.46957 2.78929 7.96086 2.41421 7.58579C2.03914 7.21071 1.53043 7 1 7V3C1.53043 3 2.03914 2.78929 2.41421 2.41421C2.78929 2.03914 3 1.53043 3 1H13C13 1.53043 13.2107 2.03914 13.5858 2.41421C13.9609 2.78929 14.4696 3 15 3V6.528C15.38 6.868 15.717 7.256 16 7.682V1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0L1 0Z"
-                          fill="black" />
-                      <path
-                          d="M9.998 5.08303L10 5.00003C9.9998 4.65562 9.91066 4.3171 9.74121 4.01726C9.57177 3.71742 9.32777 3.46641 9.03284 3.28855C8.73791 3.11069 8.40205 3.01201 8.05778 3.00206C7.71352 2.99211 7.37252 3.07123 7.06781 3.23175C6.7631 3.39228 6.50501 3.62877 6.31853 3.91833C6.13205 4.20789 6.02351 4.54069 6.00341 4.88451C5.98331 5.22834 6.05234 5.57152 6.20381 5.88083C6.35529 6.19014 6.58407 6.4551 6.868 6.65003C7.73176 5.8273 8.82177 5.2816 9.998 5.08303V5.08303Z"
-                          fill="black" />
-                  </svg>
-
-                  <p>گزارش درآمد</p>
-              </a>
-          </li> -->
-
-
 
       <li>
         <a href="#">
@@ -323,9 +300,40 @@
         </a>
       </li>
 
-
-
     </ul>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+
+            <h1>
+              <span>
+                پست
+              </span>
+              <span class="iconify" data-icon="icon-park-outline:ad-product"></span>
+            </h1>
+
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <div class="item">
+
+              <a href="/html/admin-panel/posts/main/admin-panel-posts-main.html" id="posts-icon">
+                <span class="iconify" data-icon="carbon:add"></span>
+                <p>اضافه کردن</p>
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
 
 
 
@@ -354,8 +362,16 @@
   </header>
 
 
-
   <main id="main">
+
+    <div class="debug-admin">
+      <h1>به بخش تست ادمین پنل خوش آمدید </h1>
+      <p>برای استفاده از امکانات پنل مدریت از نوار سمت راست استفاده کنید</p>
+      <a href="/html/main-page/index.html">
+        <i class="fa-solid fa-arrow-left-long"></i>
+        بازگشت به صفحه اصلی
+      </a>
+    </div>
 
   </main>
 
@@ -439,6 +455,15 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- Iconify -->
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
 
 
 </body>
